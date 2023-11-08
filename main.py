@@ -80,6 +80,8 @@ if __name__ == '__main__':
 
     output_path = tkinter.Entry(file_frame, width=50)
     output_path.grid(row=1, column=0, pady=20, columnspan=40)
+    output_folder_button = Button(file_frame,image = folder_photo)
+    output_folder_button.grid(row = 1, column=40,padx=10,pady=20)
 
     create_folders()
 
