@@ -24,13 +24,13 @@ def lmis_image_trim(file_path,file,post_image_path,prefix):
     return image_trimmed
 
 
-
-################ Actual Loop #######################
-for root, dirs, files in os.walk(pre_image_path):
-    # select file name
-    for file in files:
-        file_path = os.path.join(root, file)
-        try:
-            lmis_image_trim(file_path,file,post_image_path,"fail")
-        except:
-            print("sumthang")
+if __name__ =="__main__":
+    ################ Actual Loop #######################
+    for root, dirs, files in os.walk(pre_image_path):
+        # select file name
+        for file in files:
+            file_path = os.path.join(root, file)
+            try:
+                lmis_image_trim(file_path,file,post_image_path,"fail")
+            except:
+                print("sumthang")
